@@ -1,14 +1,21 @@
 body
 {
     margin:0;
-    background-color: black;
+    background-color: rgb(14, 13, 13);
+    color:white;
+    font-family:Roboto, Arial, sans-serif;
+    line-height:24px;
+
 }
 /****************************** NavBar*****************************/
 nav
 {
-    background-color: rgb(26, 24, 22);
+    background-color: rgb(20, 20, 19);
     width:100%;
     height: 60px;
+    position:fixed;
+    top:0;
+    opacity:1;
 }
 nav div
 {
@@ -68,62 +75,135 @@ nav div
 .search_container
 {
     clear:none;
-    margin-top:15px;
-    margin-left:128px;
 }
-input[type="text"]
-{   
+input
+{
     width:590px;
-    font-size:23px; /*instead of the height*/
+    font-size:20px;
     background-color: black; 
     color:white;
+    margin-top:18px;
+    margin-left:128px;
     outline:none;
     border:none;
-    padding-left:15px;
-
-
+    padding-left: 15px;
 }
 
 .search_button
-{   
+{
+    font-size:20px;
     width:70px;
-    font-size:23px;
-    background-color:rgb(49, 48, 46);
+    background-color: rgb(51, 51, 49);
     outline:none;
     margin-left: -4px;
+    margin-bottom:-5px;
+    margin-right: 20px;
+
     border:none;
+    
 }
+
+
 .fa-search
 {
-    font-size: 12px;
-    text-align:center;
-    opacity:0.6;
-
-}
-.fa-microphone
-{
-    margin-left:20px;
-    font-size:17px;
+    font-size:10px!important; 
+    opacity:0.7;
 }
 ::placeholder
 {
-    font-size:17px;
+    font-size: 15px;
+
 }
-
-
-
-
-
-/****************************** Video*****************************/
-.video
+/****************************** Spacer*****************************/
+.spacer
 {
-    background-color: rgb(103, 212, 167);
+    height: 85px;
+}
+/****************************** Video*****************************/
+.embeded_video
+{
     height: 2000px;
-    width:650px;
+    width:840px;
     float: left;
-    margin: 20px 20px 0 130px;
+    margin: 0 20px 0 45px;
+}
+.embeded_video iframe
+{
+    width:840px;
+    height:480px;
+}
+/******video info******/
+.video_info
+{
+    margin-top: 15px;
+}
+.video_info a
+{
+    
+    font-size: 13px;
+}
+.video_info h1
+{
+    margin:0;
+    font-size: 18px;
+    font-weight:400;
+  
+}
+
+/******video description******/
+.video_description
+{
+    margin-top:20px;
+}
+.user_image
+{
+    border-radius: 50%;
+    height:35px;
+    width:35px;
+}
+.video_description .description_text a ,.comment_space a
+{
+    color:white;
+    font-weight:400;
+
 
 }
+/*********comments section*******/
+.comments_section
+{
+    margin-top: 25px;
+}
+.user_comment
+{
+    margin-bottom: 20px;
+}
+.description_text,.comment_space
+
+{
+    margin-left:60px;
+    margin-top:-45px;
+}
+ p,span
+{
+    line-height:18px;
+    font-size:14px;
+}
+
+.thumbs
+{
+    margin-top:20px;
+}
+.thumbs span
+{
+    margin-right: 12px;
+
+}
+.fa-thumbs-up,.fa-thumbs-down
+{
+    font-size:15px;
+}
+
+
 /****************************** SideBar*****************************/
 
 .sidebar
@@ -132,7 +212,6 @@ input[type="text"]
     width: 400px;
     height: 2000px;
     float: right;
-    margin-top:20px;
     margin-right:60px;
 
 }
@@ -142,3 +221,25 @@ input[type="text"]
 {
     cursor:pointer;
 }
+/******************************links style*****************************/
+.video_info a
+{
+    color:#3ea6ff;
+}
+a{
+    text-decoration: none;
+}
+/******************************opacity style*****************************/
+
+.opac_element,.thumbs span
+{ 
+    opacity:0.5;
+}
+hr
+{
+    opacity:0.3;
+    border:solid 0.5px white;
+
+}
+
+
