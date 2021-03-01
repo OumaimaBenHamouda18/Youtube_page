@@ -184,6 +184,7 @@ input
     margin-top:-45px;
 }
  p,span
+
 {
     line-height:18px;
     font-size:14px;
@@ -208,14 +209,43 @@ input
 
 .sidebar
 {
-    background-color: rgb(150, 26, 207);
-    width: 400px;
+    width: 380px;
     height: 2000px;
     float: right;
     margin-right:60px;
 
 }
+.sided_image
+{
+    margin-top:30px;
+}
+.sided_image2
+{
+    margin-top:50px;
 
+}
+.sided_image3
+{
+    margin-top:70px;
+
+}
+.sided_image4
+{
+    margin-top:70px;
+
+}
+.sided_image img
+{
+    width:150px;
+    height:100px;
+    float:left;
+    margin-right: 10px;
+}
+
+.image_description span
+{
+    display:block;
+}
 /******************************Cursor Pointer*****************************/
 .logo,.fas,.far,.fab,button
 {
@@ -231,7 +261,8 @@ a{
 }
 /******************************opacity style*****************************/
 
-.opac_element,.thumbs span
+.opac_element,.thumbs span ,.image_description span:nth-child(3),.image_description span:nth-child(5)
+
 { 
     opacity:0.5;
 }
